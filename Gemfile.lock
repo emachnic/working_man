@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    working_man (0.0.1)
+    working_man (0.0.2)
       methadone
 
 GEM
