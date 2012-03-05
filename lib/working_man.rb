@@ -1,3 +1,4 @@
+require "yaml"
 require "working_man/version"
 require "working_man/actions"
 
