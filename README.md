@@ -9,15 +9,32 @@ Install like normal in your system then start/stop as needed.
 
     $ gem install working_man
 
-## Usage
+## Configuration
 
-WorkingMan reads applications and URLs from `config/setup.yml`. You just need
-to customize it to your needs and then run.
+WorkingMan reads applications and URLs from `~/.working_man.yml`. You 
+just need to customize it to your needs and then run.
+
+### Example
+
+```yaml
+# Default applications for startup and shutdown.
+# Add/remove applications to customize
+apps:
+  - 'Google Chrome'
+  - 'Briquette'
+  - 'Skype'
+
+# URLs open in default browser
+urls:
+  - 'http://www.google.com'
+```
+
+## Usage
 
 To start your work day, run the following:
 
     $ working_man start
-    
+
 After you're finished with work, run:
 
     $ working_man stop
