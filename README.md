@@ -17,16 +17,16 @@ just need to customize it to your needs and then run.
 ### Example
 
 ```ruby
-    # Default applications for startup and shutdown.
-    # Add/remove applications to customize
-    apps:
-      - 'Google Chrome'
-      - 'Briquette'
-      - 'Skype'
-    
-    # URLs open in default browser
-    urls:
-      - 'http://www.google.com'
+# Default applications for startup and shutdown.
+# Add/remove applications to customize
+apps:
+  - 'Google Chrome'
+  - 'Briquette'
+  - 'Skype'
+
+# URLs open in default browser
+urls:
+  - 'http://www.google.com'
 ```
 
 ## Usage
