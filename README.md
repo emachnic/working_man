@@ -16,7 +16,7 @@ just need to customize it to your needs and then run.
 
 ### Example
 
-```
+```yaml
 # Default applications for startup and shutdown.
 # Add/remove applications to customize
 apps:
