@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["emachnic@broadmac.net"]
   gem.description   = %q{Start/stop your work apps for the day}
   gem.summary       = %q{Start/stop your work apps for the day}
-  gem.homepage      = "http://github.com/emachnic/working_man"
+  gem.homepage      = "http://emachnic.github.com/working_man"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")

@@ -1,11 +1,12 @@
 # Default applications for startup and shutdown.
 # Add/remove applications to customize
 apps:
-  - 'Google Chrome'
+  #- 'Google Chrome'
+  #- 'Briquette'
+  #- 'Skype'
+  #- 'iChat'
   - 'Propane'
-  - 'Skype'
-  - 'iChat'
-  
+
 # URLs open in default browser
 urls:
-  - 'http://google.com'
+  #- 'http://google.com'
