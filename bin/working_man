@@ -5,6 +5,7 @@ require 'methadone'
 require 'working_man'
 
 include Methadone::Main
+include Methadone::CLILogging
 
 main do |run_type|
   # your program code here
@@ -21,23 +22,11 @@ end
 # supplemental methods here
 
 # Declare command-line interface here
-
-# description "one line description of your app"
 #
-# Accept flags via:
-# on("--flag VAL","Some flag")
-# options[flag] will contain VAL
+description "WorkingMan starts and stops your work day"
 #
-# Specify switches via:
-# on("--[no-]switch","Some switch")
-#
-# Or, just call OptionParser methods on opts
-#
-# Require an argument
-# arg :some_arg 
-#
-# # Make an argument optional
-# arg :optional_arg, :optional
+# Require run_type
+arg :run_type, "'start' or 'stop' your work day"
 
 version WorkingMan::VERSION
 
