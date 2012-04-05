@@ -3,6 +3,11 @@
 WorkingMan is here to help you get started with your work day. He opens the
 applications you need as well as any URLs.
 
+## CI Status
+
+[![Build Status](https://secure.travis-ci.org/[emachnic]/[working_man].png)](http://travis-ci.org/[emachnic]/[working_man])
+
+
 ## Installation
 
 Install like normal in your system then start/stop as needed.
