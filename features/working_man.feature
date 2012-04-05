@@ -1,7 +1,7 @@
-Feature: My bootstrapped app kinda works
-In order to get going on coding my awesome app
-I want to have aruba and cucumber setup
-So I don't have to do it myself
+Feature: WorkingMan actually works
+In order to make it easy to start and stop work each day
+I want to have WorkingMan automatically open and close my apps
+So that I can be lazy
 
 Scenario: App just runs
   When I get help for "working_man"
@@ -21,7 +21,6 @@ Scenario: Start work successfully with app and url
     urls:
       - 'http://www.google.com'
     """
-  Then the file "/tmp/fakehome/.working_man.yml" should contain "Twitter"
   And I run `working_man start`
   Then the output should contain "Work hard today"
   And the exit status should be 0
@@ -33,7 +32,6 @@ Scenario: Start work successfully with app and no url
       - 'Twitter'
     urls:
     """
-  Then the file "/tmp/fakehome/.working_man.yml" should contain "Twitter"
   And I run `working_man start`
   Then the output should contain "Work hard today"
   And the exit status should be 0
@@ -45,7 +43,6 @@ Scenario: Start work unsuccessfully without any apps
     urls:
       - 'http://www.google.com'
     """
-  Then the file "/tmp/fakehome/.working_man.yml" should contain "http://www.google.com"
   And I run `working_man start`
   Then the output should contain "No applications in configuration"
   And the exit status should be 2
