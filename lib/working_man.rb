@@ -12,48 +12,25 @@ module WorkingMan
   #
   #   WorkingMan.start_work
   def self.start_work
-    if File.exists?(File.expand_path('~/.working_man.yml'))
-      @config = YAML::load(File.open(File.expand_path('~/.working_man.yml')))
-      print "Starting work...\n"
-      begin
-        WorkingMan::Actions.launch_applications(@config['apps'])
-      rescue NoMethodError
-        p "No applications in configuration"
-        exit(2)
-      end
-      
-      begin
-        WorkingMan::Actions.open_urls(@config['urls'])
-      rescue NoMethodError
-      end
-      print "Work hard today!\n"
-      return true
-    else
-      puts "No configuration found. Please configure which apps to start in ~/.working_man.yml."
-      exit(1)
-    end
+    print "Starting work...\n"
+    
+    WorkingMan::Actions.launch_applications(@@config['apps'])
+    WorkingMan::Actions.open_urls(@@config['urls'])
+
+    print "Work hard today!\n"
   end
   
-  # Internal: Stop work iterates through the apps in @config['apps'], stopping
+  # Internal: Stop work iterates through the apps in @@config['apps'], stopping
   # each one
   #
   # Examples:
   #
   #   WorkingMan.stop_work
   def self.stop_work
-    if File.exists?(File.expand_path('~/.working_man.yml'))
-      @config = YAML::load(File.open(File.expand_path('~/.working_man.yml')))
-      print "Stopping work...\n"
-      begin
-        WorkingMan::Actions.close_applications(@config['apps'])
-      rescue NoMethodError
-        p "No applications in configuration"
-        exit(2)
-      end
-      print "Have a great day!\n"
-    else
-      puts "No configuration found. Please configure which apps to start in ~/.working_man.yml."
-      exit(1)
-    end
+    print "Stopping work...\n"
+
+    WorkingMan::Actions.close_applications(@config['apps'])
+
+    print "Have a great day!\n"
   end
 end
