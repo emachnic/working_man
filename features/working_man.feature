@@ -37,9 +37,6 @@ Scenario: Start work successfully specifying a config file
   Then the output should contain "Work hard today"
   And the exit status should be 0
 
-
-
-
 Scenario: Start work unsuccessfully without any apps
   Given a file named "/tmp/fakehome/.working_man.yml" with:
     """
