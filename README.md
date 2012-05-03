@@ -54,9 +54,9 @@ After you're finished with work, run:
 ## License
 
 "THE BEER-WARE LICENSE" (Revision 42): 
-[email][] wrote this file. As long as you retain this notice you can do whatever
+[emachnic@broadmac.net][1] wrote this file. As long as you retain this notice you can do whatever
 you want with this stuff. If we meet some day, and you think this stuff is worth it, you can
 buy me a beer in return. 
 **Evan B. Machnic**
 
-[email]: mailto:emachnic@broadmac.net "emachnic@broadmac.net"
+[1]: mailto:emachnic@broadmac.net
