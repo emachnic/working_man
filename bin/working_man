@@ -8,7 +8,9 @@ include Methadone::Main
 include Methadone::CLILogging
 
 main do |run_type|
-  check_config!
+  config_path = File.expand_path("#{options[:file]}")
+  
+  check_config(config_path)
   
   case run_type
   when "start"
@@ -23,12 +25,10 @@ end
 #
 # Examples:
 #
-#   check_config!
+#   check_config(config_path)
 #
 # Returns true if everything passes
-def check_config!
-  config_path = File.expand_path('~/.working_man.yml')
-  
+def check_config(config_path)
   if File.exists?(config_path)
     check_config_format(config_path)
     return true
@@ -63,6 +63,12 @@ def check_config_format(config_path)
 end
 
 description "WorkingMan starts and stops your work day"
+
+on('-f path_to_file',
+   '--file',
+   'Specify a different location for YAML config file')
+
+options[:file] = '~/.working_man.yml'
 
 # Require run_type
 arg :run_type, "'start' or 'stop' your work day"

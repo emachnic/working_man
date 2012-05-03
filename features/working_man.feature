@@ -24,6 +24,21 @@ Scenario: Start work successfully with app and url
   And I run `working_man start`
   Then the output should contain "Work hard today"
   And the exit status should be 0
+  
+Scenario: Start work successfully specifying a config file
+  Given a file named "/tmp/fakehome/dotfiles/working_man_config.yml" with:
+    """
+    apps:
+      - 'Twitter'
+    urls:
+      - 'http://www.google.com'
+    """
+  When I run `working_man -f ~/dotfiles/working_man_config.yml start`
+  Then the output should contain "Work hard today"
+  And the exit status should be 0
+
+
+
 
 Scenario: Start work unsuccessfully without any apps
   Given a file named "/tmp/fakehome/.working_man.yml" with:
