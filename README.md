@@ -3,9 +3,13 @@
 WorkingMan is here to help you get started with your work day. He opens the
 applications you need as well as any URLs.
 
+## Documentation
+
+[http://rubydoc.info/gems/working_man/](http://rubydoc.info/gems/working_man/)
+
 ## CI Status
 
-[![Build Status](https://secure.travis-ci.org/[emachnic]/[working_man].png)](http://travis-ci.org/[emachnic]/[working_man])
+[![Build Status](https://secure.travis-ci.org/emachnic/working_man.png)](http://travis-ci.org/emachnic/working_man)
 
 
 ## Installation
