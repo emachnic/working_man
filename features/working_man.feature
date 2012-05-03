@@ -24,17 +24,6 @@ Scenario: Start work successfully with app and url
   And I run `working_man start`
   Then the output should contain "Work hard today"
   And the exit status should be 0
-  
-Scenario: Start work successfully with app and no url
-  Given a file named "/tmp/fakehome/.working_man.yml" with:
-    """
-    apps:
-      - 'Twitter'
-    urls:
-    """
-  And I run `working_man start`
-  Then the output should contain "Work hard today"
-  And the exit status should be 0
 
 Scenario: Start work unsuccessfully without any apps
   Given a file named "/tmp/fakehome/.working_man.yml" with:

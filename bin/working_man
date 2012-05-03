@@ -48,15 +48,15 @@ end
 #
 # Returns true if everything passes
 def check_config_format(config_path)
-  @@config = YAML::load(File.open(config_path))
+  $config = YAML::load(File.open(config_path))
   
-  if !@@config
+  if !$config
     p "Nothing in configuration. Exiting..."
     exit 2
-  elsif !@@config['apps']
+  elsif !$config['apps']
     p "No applications in configuration. Exiting..."
     exit 2
-  elsif !@@config['urls']
+  elsif !$config['urls']
     p "WARN: No URLs in configuration"
     return true
   end
