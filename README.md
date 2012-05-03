@@ -43,6 +43,10 @@ After you're finished with work, run:
 
     $ working_man stop
 
+You can also specify a different location for your YAML config:
+
+	& working_man -f path/to/config.yml start
+
 ## Contributing
 
 1. Fork it
