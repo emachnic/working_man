@@ -15,8 +15,8 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = WorkingMan::VERSION
   gem.add_development_dependency 'rdoc'
-  gem.add_development_dependency 'rake',  '~> 0.9.2'
-  gem.add_development_dependency 'aruba', '~> 0.5'
-  gem.add_development_dependency 'rspec', '~> 2.9'
-  gem.add_dependency 'methadone', '~>1.0.0.rc4'
+  gem.add_development_dependency 'rake',      '~> 0.9.2'
+  gem.add_development_dependency 'aruba',     '~> 0.5'
+  gem.add_development_dependency 'rspec',     '~> 2.9'
+  gem.add_dependency             'methadone', '~> 1.2.1'
 end
