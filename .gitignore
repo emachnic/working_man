@@ -3,3 +3,5 @@ results.html
 pkg
 html
 config/setup.yml
+.rbx/
+.bundle/
