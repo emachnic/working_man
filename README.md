@@ -6,6 +6,7 @@ applications you need as well as any URLs.
 ## CI Status
 
 [![Build Status](https://secure.travis-ci.org/emachnic/working_man.png)](http://travis-ci.org/emachnic/working_man)
+[![Dependency Status](https://gemnasium.com/emachnic/working_man.png)](https://gemnasium.com/emachnic/working_man)
 
 ## Installation
 
