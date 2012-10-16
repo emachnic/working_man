@@ -1,11 +1,11 @@
 PATH
   remote: .
   specs:
-    working_man (0.0.4)
+    working_man (0.2.0)
       methadone (~> 1.0.0.rc4)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     aruba (0.4.11)
       childprocess (>= 0.2.3)
