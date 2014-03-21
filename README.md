@@ -46,7 +46,7 @@ After you're finished with work, run:
 
 You can also specify a different location for your YAML config:
 
-	& working_man -f path/to/config.yml start
+	& working_man start -f path/to/config.yml
 
 ## Contributing
 
