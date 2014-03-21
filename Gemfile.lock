@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    working_man (0.3.0)
+    working_man (1.0.0)
       thor (~> 0.18.1)
 
 GEM
