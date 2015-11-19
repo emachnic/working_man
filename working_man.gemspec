@@ -14,6 +14,22 @@ Gem::Specification.new do |gem|
   gem.name          = "working_man"
   gem.require_paths = ["lib"]
   gem.version       = WorkingMan::VERSION
+  gem.post_install_message = <<-END
+    Thanks for installing WorkingMan!
+
+    To get started, you'll need a .working_man.yml configuration file in your
+    home directory. You can use the following as an example:
+
+    apps:
+      - 'Google Chrome'
+
+    urls:
+      - 'http://www.ruby-lang.com'
+
+    Please see the documentation at http://emachnic.github.com/working_man for
+    more information.
+  END
+
   gem.add_development_dependency 'rdoc'
   gem.add_development_dependency 'rake',  '~> 10.4'
   gem.add_development_dependency 'aruba', '~> 0.10'
