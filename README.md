@@ -5,7 +5,8 @@ applications you need as well as any URLs.
 
 ## Documentation
 
-[http://rubydoc.info/gems/working_man/](http://rubydoc.info/gems/working_man/)
+* [Rubydoc](http://rubydoc.info/gems/working_man/)
+* [Relish](https://relishapp.com/emachnic/working-man/docs)
 
 ## CI Status
 
