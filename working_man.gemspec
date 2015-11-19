@@ -18,5 +18,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake',  '~> 10.1.1'
   gem.add_development_dependency 'aruba', '~> 0.5.4'
   gem.add_development_dependency 'rspec', '~> 2.14.1'
-  gem.add_runtime_dependency     'thor',  '~> 0.18.1'
+  gem.add_runtime_dependency     'thor',  '~> 0.19'
 end
