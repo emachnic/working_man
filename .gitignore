@@ -5,3 +5,4 @@ html
 config/setup.yml
 .rbx/
 .bundle/
+tmp/
