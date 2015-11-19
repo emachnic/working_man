@@ -10,6 +10,7 @@ applications you need as well as any URLs.
 
 ## CI Status
 
+[![Gem Version](https://badge.fury.io/rb/working_man.svg)](https://badge.fury.io/rb/working_man)
 [![Build Status](https://secure.travis-ci.org/emachnic/working_man.png)](http://travis-ci.org/emachnic/working_man)
 [![Dependency Status](https://gemnasium.com/emachnic/working_man.png)](https://gemnasium.com/emachnic/working_man)
 
@@ -22,7 +23,7 @@ Install like normal in your system then start/stop as needed.
 
 ## Configuration
 
-WorkingMan reads applications and URLs from `~/.working_man.yml`. You 
+WorkingMan reads applications and URLs from `~/.working_man.yml`. You
 just need to customize it to your needs and then run.
 
 ### Example
@@ -45,11 +46,11 @@ urls:
 To start your work day, run the following:
 
     $ working_man start
-    
+
 After you're finished with work, run:
 
     $ working_man stop
-	
+
 You can also specify a different location for your YAML config:
 
 	& working_man start -f path/to/config.yml
@@ -68,7 +69,7 @@ You can also specify a different location for your YAML config:
 
 [emachnic@broadmac.net][1] wrote this file. As long as you retain this notice you can do whatever
 you want with this stuff. If we meet some day, and you think this stuff is worth it, you can
-buy me a beer in return. 
+buy me a beer in return.
 
 **Evan B. Machnic**
 
