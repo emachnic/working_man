@@ -32,7 +32,7 @@ GEM
     gherkin3 (3.1.2)
     multi_json (1.11.2)
     multi_test (0.1.2)
-    rake (10.4.2)
+    rake (13.0.1)
     rdoc (4.2.0)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
@@ -54,7 +54,7 @@ PLATFORMS
 
 DEPENDENCIES
   aruba (~> 0.10)
-  rake (~> 10.4)
+  rake (~> 13.0)
   rdoc
   rspec (~> 3.4)
   working_man!
